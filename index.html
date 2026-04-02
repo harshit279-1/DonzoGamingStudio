@@ -90,15 +90,35 @@
     }
 
     .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       font-family: 'Orbitron', monospace;
       font-size: 22px;
       font-weight: 900;
       letter-spacing: 3px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .logo-img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: var(--glow);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: #03010a;
+    }
+
+    .logo-text {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
       background: linear-gradient(90deg, var(--primary), var(--accent));
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-decoration: none;
     }
 
     .logo span {
@@ -1767,7 +1787,10 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#home" class="logo">DONZO<span>GAMING</span>STUDIO</a>
+    <a href="#home" class="logo">
+      <img src="img/logo.jpeg" alt="Donzo Gaming Studio Logo" class="logo-img">
+      <span class="logo-text">DONZO<span>GAMING</span>STUDIO</span>
+    </a>
     <ul class="nav-links" id="navLinks">
       <a href="#home" onclick="closeMenu()">Home</a>
       <a href="#about" onclick="closeMenu()">About</a>
