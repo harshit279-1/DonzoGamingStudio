@@ -119,12 +119,13 @@
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-
     }
 
-    .logo span {
-      color: var(--secondary);
-      -webkit-text-fill-color: var(--secondary);
+    .logo-text span {
+      background: inherit;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .nav-links {
@@ -1912,7 +1913,7 @@
   <nav>
     <a href="#home" class="logo">
       <img src="img/logo.jpeg" alt="Donzo Gaming Studio Logo" class="logo-img">
-      <span class="logo-text">DONZO<span>GAMING</span>STUDIO</span>
+      <span class="logo-text">DONZO GAMING<span style="-webkit-text-fill-color:var(--secondary);background:none;"> STUDIO </span>
     </a>
     <ul class="nav-links" id="navLinks">
       <a href="#home" onclick="closeMenu()">Home</a>
